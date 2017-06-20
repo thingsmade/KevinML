@@ -3,6 +3,7 @@ Created on 18 Jun 2017
 
 @author: martin
 '''
+import sys
 import data
 import keras.models
 import keras.layers
@@ -61,7 +62,7 @@ def getConfusion(t1,t2):
     
     
 if __name__ == '__main__':
-    filen=data.filen
+    filen=data.filename
     if len(sys.argv)>1:
         pass
     inp=data.load_data(filen)
